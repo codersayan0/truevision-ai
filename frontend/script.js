@@ -87,8 +87,8 @@ async function uploadImage() {
            FIX RESPONSE HANDLING
         ========================= */
 
-        const label = data.result || data.label || "Unknown";
-        let confidence = data.confidence || 0;
+        const label = data.label || "Unknown";
+        let confidence = parseFloat(data.confidence) || 0;
 
         // Fix confidence scaling
         if (confidence <= 1) {
