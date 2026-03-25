@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TrueVision AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="card">
+
+        <h1>👁️ TrueVision AI</h1>
+        <p class="subtitle">AI-powered Fake Image Detection</p>
+
+        <!-- DROP AREA -->
+        <div id="dropArea" class="drop-area">
+            <p>Drag & Drop Image Here</p>
+            <span>or click to upload</span>
+            <input type="file" id="fileInput" hidden>
+        </div>
+
+        <!-- PREVIEW -->
+        <div class="preview-container">
+            <img id="preview" class="preview">
+            <div id="scanner" class="scanner"></div>
+        </div>
+
+        <!-- BUTTON -->
+        <button id="analyzeBtn">Analyze</button>
+
+        <div id="loader" class="loader"></div>
+        <div id="result" class="result"></div>
+        <div id="confidenceBar"></div>
+
+    </div>
+
+</div>
+
+<footer>
+    Made by Sayan 🚀
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
