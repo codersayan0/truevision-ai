@@ -71,7 +71,7 @@ async function uploadImage() {
     formData.append("file", fileInput.files[0]);
 
     try {
-        const res = await fetch("https://truevision-ai.onrender.com/predict/", {
+        const res = await fetch("http://localhost:5000", {
             method: "POST",
             body: formData
         });
